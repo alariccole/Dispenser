@@ -84,7 +84,7 @@
 						//enumerating over the indexPathsForSelectedItems may change it and cause problems.
 						[selectedItems enumerateObjectsUsingBlock:^(NSIndexPath* indexPath, NSUInteger idx, BOOL *stop) {
 
-							NSLog(@"item at %@", indexPath.description);
+//							NSLog(@"item at %@", indexPath.description);
 
 							NSString * token = [self.availableTokensArray objectAtIndex:indexPath.item];
 							
@@ -93,8 +93,8 @@
 							
 							NSInteger itemsInsSection = [self collectionView:self.collectionView numberOfItemsInSection:1];
 
-							NSLog(@"token: %@", token);
-							
+//							NSLog(@"token: %@", token);
+
 							NSIndexPath * finalIndexPath = [NSIndexPath indexPathForItem:itemsInsSection inSection:1];
 
 //							NSString * user = @"some user";
