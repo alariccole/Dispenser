@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'Tokenizer' target in the 'Tokenizer' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+#endif
+
+
+
+#define kURLPrefix @"http://tokn.co/"
+
+#define kAvailableTokens @"availableTokens"
+
+#define kDispensedTokens @"dispensedTokens"

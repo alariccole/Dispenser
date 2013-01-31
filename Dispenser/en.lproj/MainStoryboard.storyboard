@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1GL-hX-HsH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5pG-JM-JrD">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1GL-hX-HsH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6jC-V1-h8B">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jV0-iM-gEa" kind="relationship" relationship="rootViewController" id="Bh7-Ez-Wq2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VeR-Lz-NH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="-431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9pw-q0-dxu">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="8Lh-nW-Jpx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vjf-PG-cDR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="YbV-Vo-BAE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rhj-IY-iRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="-1160"/>
+        </scene>
+        <!--Add Tokens View Controller - Paste  Tokens-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="AddTokensViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="94" width="320" height="474"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yky-OC-98O">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="504" type="user" id="HU0-6m-9kf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yky-OC-98O" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="UdL-7F-lxg"/>
+                            <constraint firstItem="yky-OC-98O" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="rdH-h2-wno"/>
+                            <constraint firstItem="yky-OC-98O" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="rdv-JC-dCL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Paste  Tokens" prompt="This will replace all tokens." id="tHd-ab-0oR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Zdr-A8-5CH">
+                            <connections>
+                                <segue destination="Sy0-44-f7B" kind="unwind" unwindAction="cancel:" id="U6g-hy-Rfh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yc0-sb-RTL">
+                            <connections>
+                                <segue destination="Sy0-44-f7B" kind="unwind" unwindAction="done:" id="88k-pn-UDN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="textView" destination="yky-OC-98O" id="e5O-oZ-clm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <exit id="Sy0-44-f7B" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-1155"/>
+        </scene>
+        <!--Share Tokens Collection View Controller - Select Tokens-->
+        <scene sceneID="DPe-pi-VGW">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="jV0-iM-gEa" customClass="ShareTokensCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="XfM-Y9-wyr">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.79302503602305474" green="0.79302503602305474" blue="0.79302503602305474" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ou1-tb-AR5">
+                            <size key="itemSize" width="145" height="110"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TOKEN_CELL" id="4cJ-xB-1zv" customClass="TokenCollectionViewCell">
+                                <rect key="frame" x="10" y="10" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reH-SV-v7a">
+                                            <color key="backgroundColor" red="0.22601747088102242" green="0.49876427241395083" blue="1" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfW-qc-xhP">
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.90803027153015137" green="0.90800309181213379" blue="0.90801846981048584" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZfW-qc-xhP" secondAttribute="trailing" constant="10" type="user" id="1DZ-MD-uIV"/>
+                                    <constraint firstItem="reH-SV-v7a" firstAttribute="leading" secondItem="4cJ-xB-1zv" secondAttribute="leading" constant="5" type="user" id="1Kc-12-Sla"/>
+                                    <constraint firstItem="ZfW-qc-xhP" firstAttribute="top" secondItem="4cJ-xB-1zv" secondAttribute="top" constant="10" type="user" id="8yu-nG-FCv"/>
+                                    <constraint firstAttribute="bottom" secondItem="reH-SV-v7a" secondAttribute="bottom" constant="5" type="user" id="nmY-xB-CYe"/>
+                                    <constraint firstItem="ZfW-qc-xhP" firstAttribute="leading" secondItem="4cJ-xB-1zv" secondAttribute="leading" constant="10" type="user" id="u4W-eo-0CR"/>
+                                    <constraint firstAttribute="trailing" secondItem="reH-SV-v7a" secondAttribute="trailing" constant="5" type="user" id="uGb-zm-XMP"/>
+                                    <constraint firstItem="reH-SV-v7a" firstAttribute="top" secondItem="4cJ-xB-1zv" secondAttribute="top" constant="5" type="user" id="vSd-22-KIv"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZfW-qc-xhP" secondAttribute="bottom" constant="10" type="user" id="xoo-UJ-lTO"/>
+                                </constraints>
+                                <size key="customSize" width="145" height="145"/>
+                                <connections>
+                                    <outlet property="label" destination="ZfW-qc-xhP" id="eeP-AR-aID"/>
+                                    <outlet property="selectionIndicator" destination="reH-SV-v7a" id="NZt-eF-zhg"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="jV0-iM-gEa" id="ue2-8a-KpT"/>
+                            <outlet property="delegate" destination="jV0-iM-gEa" id="U5L-6t-JzM"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Select Tokens" id="mvs-Uq-wMs">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="52f-aJ-gUW">
+                            <connections>
+                                <segue destination="8Lh-nW-Jpx" kind="modal" id="JrG-mE-b5n"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="oGu-f6-ceM">
+                            <connections>
+                                <action selector="showSharingOptions:" destination="jV0-iM-gEa" id="W0f-sr-YQf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="actionButton" destination="oGu-f6-ceM" id="qUo-fV-euh"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvT-de-hzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="-424"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

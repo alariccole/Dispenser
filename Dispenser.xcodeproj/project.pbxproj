@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D150ACA16BA5FEE0063E4FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D150AC916BA5FEE0063E4FF /* QuartzCore.framework */; };
+		6D150AEF16BA75BC0063E4FF /* AddTokensViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D150ADB16BA75BC0063E4FF /* AddTokensViewController.m */; };
+		6D150AF016BA75BC0063E4FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D150ADD16BA75BC0063E4FF /* AppDelegate.m */; };
+		6D150AF116BA75BC0063E4FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D150ADE16BA75BC0063E4FF /* main.m */; };
+		6D150AF216BA75BC0063E4FF /* ShareTokensCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D150AE016BA75BC0063E4FF /* ShareTokensCollectionViewController.m */; };
+		6D150AF316BA75BC0063E4FF /* TokenCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D150AE216BA75BC0063E4FF /* TokenCollectionViewCell.m */; };
+		6D150AF516BA75BC0063E4FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D150AE516BA75BC0063E4FF /* InfoPlist.strings */; };
+		6D150AF616BA75BC0063E4FF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D150AE716BA75BC0063E4FF /* MainStoryboard.storyboard */; };
+		6D150AF716BA75BC0063E4FF /* SelectableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D150AEA16BA75BC0063E4FF /* SelectableCollectionViewCell.m */; };
+		6D150AF816BA75BC0063E4FF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D150AEC16BA75BC0063E4FF /* Default-568h@2x.png */; };
+		6D150AF916BA75BC0063E4FF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D150AED16BA75BC0063E4FF /* Default.png */; };
+		6D150AFA16BA75BC0063E4FF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D150AEE16BA75BC0063E4FF /* Default@2x.png */; };
+		6D150AFD16BA76480063E4FF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D150AFB16BA76470063E4FF /* Icon@2x.png */; };
+		6D150AFE16BA76480063E4FF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D150AFC16BA76470063E4FF /* Icon.png */; };
+		6D81809216B97C430098D730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D81809116B97C430098D730 /* UIKit.framework */; };
+		6D81809416B97C430098D730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D81809316B97C430098D730 /* Foundation.framework */; };
+		6D81809616B97C440098D730 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D81809516B97C430098D730 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D150AC916BA5FEE0063E4FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6D150ADA16BA75BC0063E4FF /* AddTokensViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTokensViewController.h; path = Dispenser/AddTokensViewController.h; sourceTree = SOURCE_ROOT; };
+		6D150ADB16BA75BC0063E4FF /* AddTokensViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTokensViewController.m; path = Dispenser/AddTokensViewController.m; sourceTree = SOURCE_ROOT; };
+		6D150ADC16BA75BC0063E4FF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Dispenser/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		6D150ADD16BA75BC0063E4FF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Dispenser/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		6D150ADE16BA75BC0063E4FF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Dispenser/main.m; sourceTree = SOURCE_ROOT; };
+		6D150ADF16BA75BC0063E4FF /* ShareTokensCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareTokensCollectionViewController.h; path = Dispenser/ShareTokensCollectionViewController.h; sourceTree = SOURCE_ROOT; };
+		6D150AE016BA75BC0063E4FF /* ShareTokensCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareTokensCollectionViewController.m; path = Dispenser/ShareTokensCollectionViewController.m; sourceTree = SOURCE_ROOT; };
+		6D150AE116BA75BC0063E4FF /* TokenCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TokenCollectionViewCell.h; path = Dispenser/TokenCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		6D150AE216BA75BC0063E4FF /* TokenCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TokenCollectionViewCell.m; path = Dispenser/TokenCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
+		6D150AE316BA75BC0063E4FF /* Dispenser-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Dispenser-Info.plist"; path = "Dispenser/Dispenser-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6D150AE616BA75BC0063E4FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		6D150AE816BA75BC0063E4FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6D150AE916BA75BC0063E4FF /* SelectableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectableCollectionViewCell.h; path = Dispenser/SelectableCollectionViewCell.h; sourceTree = SOURCE_ROOT; };
+		6D150AEA16BA75BC0063E4FF /* SelectableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectableCollectionViewCell.m; path = Dispenser/SelectableCollectionViewCell.m; sourceTree = SOURCE_ROOT; };
+		6D150AEB16BA75BC0063E4FF /* Dispenser-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Dispenser-Prefix.pch"; path = "Dispenser/Dispenser-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		6D150AEC16BA75BC0063E4FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Dispenser/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		6D150AED16BA75BC0063E4FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Dispenser/Default.png; sourceTree = SOURCE_ROOT; };
+		6D150AEE16BA75BC0063E4FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Dispenser/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		6D150AFB16BA76470063E4FF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		6D150AFC16BA76470063E4FF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6D81808D16B97C430098D730 /* Dispenser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dispenser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D81809116B97C430098D730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6D81809316B97C430098D730 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6D81809516B97C430098D730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D81808A16B97C430098D730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D150ACA16BA5FEE0063E4FF /* QuartzCore.framework in Frameworks */,
+				6D81809216B97C430098D730 /* UIKit.framework in Frameworks */,
+				6D81809416B97C430098D730 /* Foundation.framework in Frameworks */,
+				6D81809616B97C440098D730 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D150AE416BA75BC0063E4FF /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6D150AE516BA75BC0063E4FF /* InfoPlist.strings */,
+				6D150AE716BA75BC0063E4FF /* MainStoryboard.storyboard */,
+			);
+			name = en.lproj;
+			path = Dispenser/en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		6D81808216B97C430098D730 = {
+			isa = PBXGroup;
+			children = (
+				6D150AFB16BA76470063E4FF /* Icon@2x.png */,
+				6D150AFC16BA76470063E4FF /* Icon.png */,
+				6D81809716B97C440098D730 /* Dispenser */,
+				6D81809016B97C430098D730 /* Frameworks */,
+				6D81808E16B97C430098D730 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D81808E16B97C430098D730 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D81808D16B97C430098D730 /* Dispenser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D81809016B97C430098D730 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D81809116B97C430098D730 /* UIKit.framework */,
+				6D81809316B97C430098D730 /* Foundation.framework */,
+				6D81809516B97C430098D730 /* CoreGraphics.framework */,
+				6D150AC916BA5FEE0063E4FF /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D81809716B97C440098D730 /* Dispenser */ = {
+			isa = PBXGroup;
+			children = (
+				6D150AE416BA75BC0063E4FF /* en.lproj */,
+				6D150ADA16BA75BC0063E4FF /* AddTokensViewController.h */,
+				6D150ADB16BA75BC0063E4FF /* AddTokensViewController.m */,
+				6D150ADC16BA75BC0063E4FF /* AppDelegate.h */,
+				6D150ADD16BA75BC0063E4FF /* AppDelegate.m */,
+				6D150ADF16BA75BC0063E4FF /* ShareTokensCollectionViewController.h */,
+				6D150AE016BA75BC0063E4FF /* ShareTokensCollectionViewController.m */,
+				6D150AE116BA75BC0063E4FF /* TokenCollectionViewCell.h */,
+				6D150AE216BA75BC0063E4FF /* TokenCollectionViewCell.m */,
+				6D150AE916BA75BC0063E4FF /* SelectableCollectionViewCell.h */,
+				6D150AEA16BA75BC0063E4FF /* SelectableCollectionViewCell.m */,
+				6D81809816B97C440098D730 /* Supporting Files */,
+			);
+			name = Dispenser;
+			path = Tokenizer;
+			sourceTree = "<group>";
+		};
+		6D81809816B97C440098D730 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D150ADE16BA75BC0063E4FF /* main.m */,
+				6D150AE316BA75BC0063E4FF /* Dispenser-Info.plist */,
+				6D150AEB16BA75BC0063E4FF /* Dispenser-Prefix.pch */,
+				6D150AEC16BA75BC0063E4FF /* Default-568h@2x.png */,
+				6D150AED16BA75BC0063E4FF /* Default.png */,
+				6D150AEE16BA75BC0063E4FF /* Default@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D81808C16B97C430098D730 /* Dispenser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8180B116B97C440098D730 /* Build configuration list for PBXNativeTarget "Dispenser" */;
+			buildPhases = (
+				6D81808916B97C430098D730 /* Sources */,
+				6D81808A16B97C430098D730 /* Frameworks */,
+				6D81808B16B97C430098D730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dispenser;
+			productName = Tokenizer;
+			productReference = 6D81808D16B97C430098D730 /* Dispenser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D81808416B97C430098D730 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Alaric Cole";
+			};
+			buildConfigurationList = 6D81808716B97C430098D730 /* Build configuration list for PBXProject "Dispenser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6D81808216B97C430098D730;
+			productRefGroup = 6D81808E16B97C430098D730 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D81808C16B97C430098D730 /* Dispenser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D81808B16B97C430098D730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D150AF516BA75BC0063E4FF /* InfoPlist.strings in Resources */,
+				6D150AF616BA75BC0063E4FF /* MainStoryboard.storyboard in Resources */,
+				6D150AF816BA75BC0063E4FF /* Default-568h@2x.png in Resources */,
+				6D150AF916BA75BC0063E4FF /* Default.png in Resources */,
+				6D150AFA16BA75BC0063E4FF /* Default@2x.png in Resources */,
+				6D150AFD16BA76480063E4FF /* Icon@2x.png in Resources */,
+				6D150AFE16BA76480063E4FF /* Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D81808916B97C430098D730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D150AEF16BA75BC0063E4FF /* AddTokensViewController.m in Sources */,
+				6D150AF016BA75BC0063E4FF /* AppDelegate.m in Sources */,
+				6D150AF116BA75BC0063E4FF /* main.m in Sources */,
+				6D150AF216BA75BC0063E4FF /* ShareTokensCollectionViewController.m in Sources */,
+				6D150AF316BA75BC0063E4FF /* TokenCollectionViewCell.m in Sources */,
+				6D150AF716BA75BC0063E4FF /* SelectableCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6D150AE516BA75BC0063E4FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D150AE616BA75BC0063E4FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6D150AE716BA75BC0063E4FF /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D150AE816BA75BC0063E4FF /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D8180AF16B97C440098D730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D8180B016B97C440098D730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D8180B216B97C440098D730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dispenser/Dispenser-Prefix.pch";
+				INFOPLIST_FILE = "Dispenser/Dispenser-Info.plist";
+				PRODUCT_NAME = Dispenser;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6D8180B316B97C440098D730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dispenser/Dispenser-Prefix.pch";
+				INFOPLIST_FILE = "Dispenser/Dispenser-Info.plist";
+				PRODUCT_NAME = Dispenser;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D81808716B97C430098D730 /* Build configuration list for PBXProject "Dispenser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8180AF16B97C440098D730 /* Debug */,
+				6D8180B016B97C440098D730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8180B116B97C440098D730 /* Build configuration list for PBXNativeTarget "Dispenser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8180B216B97C440098D730 /* Debug */,
+				6D8180B316B97C440098D730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D81808416B97C430098D730 /* Project object */;
+}

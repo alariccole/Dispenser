@@ -1,0 +1,26 @@
+#just local Stuff
+
+profile
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*~.nib
+/build
+build/*
+
+
+#ignore private workspace stuff added by Xcode4
+xcuserdata
+project.xcworkspace
+
+
+
+#generic
+*~
+*.lock
+.DS_Store
+*.swp
+*.out 
+ShareKit/Core/Helpers/sskeychain
