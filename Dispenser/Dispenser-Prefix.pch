@@ -17,6 +17,6 @@
 
 #define kURLPrefix @"http://tokn.co/"
 
-#define kAvailableTokens @"availableTokens"
+#define kAvailableTokensArray @"availableTokens"
 
-#define kDispensedTokens @"dispensedTokens"
+#define kDispensedTokensArray @"dispensedTokens"

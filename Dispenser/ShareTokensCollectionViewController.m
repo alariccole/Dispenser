@@ -97,10 +97,19 @@
 							
 							NSIndexPath * finalIndexPath = [NSIndexPath indexPathForItem:itemsInsSection inSection:1];
 
-
+//							NSString * user = @"some user";
+//							NSDictionary * dispensedTokenDictionary = @{ @"token": token, @"user": user};
+//							[self.dispensedTokensArray addObject:dispensedTokenDictionary];
+//							tokenString = dispensedTokenDictionary[ @"tokens" ];
+							
 							[self.dispensedTokensArray addObject:token];
-
+							
 							[self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
+
+							TokenCollectionViewCell * cell = (TokenCollectionViewCell*) [self.collectionView cellForItemAtIndexPath:indexPath];
+
+							cell.isDispensed = YES;
+
 
 							[self.collectionView moveItemAtIndexPath:indexPath toIndexPath:finalIndexPath];
 							
@@ -109,9 +118,9 @@
 						} completion:^(BOOL finished) {
 
 							//save for later
-							[[NSUserDefaults standardUserDefaults] setObject:self.availableTokensArray forKey:kAvailableTokens];
+							[[NSUserDefaults standardUserDefaults] setObject:self.availableTokensArray forKey:kAvailableTokensArray];
 
-							[[NSUserDefaults standardUserDefaults] setObject:self.dispensedTokensArray forKey:kDispensedTokens];
+							[[NSUserDefaults standardUserDefaults] setObject:self.dispensedTokensArray forKey:kDispensedTokensArray];
 
 
 							[[NSUserDefaults standardUserDefaults] synchronize];
@@ -158,9 +167,9 @@
 
 	[self.collectionView reloadData];
 
-	[[NSUserDefaults standardUserDefaults] setObject:self.availableTokensArray forKey:kAvailableTokens];
+	[[NSUserDefaults standardUserDefaults] setObject:self.availableTokensArray forKey:kAvailableTokensArray];
 
-	[[NSUserDefaults standardUserDefaults] setObject:self.dispensedTokensArray forKey:kDispensedTokens];
+	[[NSUserDefaults standardUserDefaults] setObject:self.dispensedTokensArray forKey:kDispensedTokensArray];
 
 	
 	[[NSUserDefaults standardUserDefaults] synchronize];
@@ -175,9 +184,9 @@
 	self.collectionView.allowsMultipleSelection = YES;
 
 	//load previous tokens, if any
-	NSArray * storedAvailableTokens = [[NSUserDefaults standardUserDefaults] objectForKey:kAvailableTokens];
+	NSArray * storedAvailableTokens = [[NSUserDefaults standardUserDefaults] objectForKey:kAvailableTokensArray];
 
-	NSArray * storedDispensedTokens = [[NSUserDefaults standardUserDefaults] objectForKey:kDispensedTokens];
+	NSArray * storedDispensedTokens = [[NSUserDefaults standardUserDefaults] objectForKey:kDispensedTokensArray];
 
 	self.availableTokensArray = storedAvailableTokens.mutableCopy;
 
@@ -259,15 +268,24 @@
 	NSString * tokenString;
 	
 	if (indexPath.section == 1) {
-		tokenString = self.dispensedTokensArray[indexPath.item];
 
+//		NSDictionary * dispensedTokenDictionary = self.dispensedTokensArray[indexPath.item];
+//		
+//		tokenString = dispensedTokenDictionary[ @"tokens" ];
+
+		tokenString = self.dispensedTokensArray[indexPath.item];
+		
 		cell.isDispensed = YES;
+
+		cell.subtitleLabel.text = @"";//user
 	}
 	else
 	{
 		tokenString = self.availableTokensArray[indexPath.item];
 
 		cell.isDispensed = NO;
+
+		cell.subtitleLabel.text = @"";
 	}
 
 	//I like to strip the url prefix to make it look nice.

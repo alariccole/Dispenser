@@ -10,7 +10,8 @@
 #import "SelectableCollectionViewCell.h"
 @interface TokenCollectionViewCell : SelectableCollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UILabel *subtitleLabel;
 
 @property (nonatomic) BOOL isDispensed;
 @end

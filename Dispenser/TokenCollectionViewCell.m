@@ -41,11 +41,13 @@
 -(void)setIsDispensed:(BOOL)isDispensed
 {
 	_isDispensed = isDispensed;
+
+	//self.subtitleLabel.hidden = !_isDispensed;
 	
 	//self.label.textColor = _isDispensed? [UIColor clearColor] : [UIColor lightTextColor];
 	if (_isDispensed) {
 		//self.label.shadowColor = [UIColor clearColor];
-
+		
 		self.backgroundColor = [UIColor colorWithHue:1.0 saturation:0. brightness:.85 alpha:1.0];
 //		self.layer.shadowRadius = 1.0f;
 //		self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
@@ -62,7 +64,9 @@
 	[super prepareForReuse];
 	
 	self.label.text = @"";
-	//self.isDispensed = NO;
+	self.subtitleLabel.text = @"";
+	
+//self.isDispensed = NO;
 //	self.layer.shadowRadius = 0.0f;
 //	self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
 }

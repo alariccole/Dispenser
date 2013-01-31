@@ -14,8 +14,10 @@
 {
 
 	NSDictionary *userDefaultsDefaults  =	@{
-												kAvailableTokens: @[],
-												kDispensedTokens: @[]
+												kAvailableTokensArray: @[],
+												kDispensedTokensArray: @[],
+	//											kDispensedTokensArray: @[   @{  @"token":@"", @"user":@""  }   ]
+												
 											};
 
 

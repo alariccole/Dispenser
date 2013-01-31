@@ -105,8 +105,18 @@
                                         <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reH-SV-v7a">
                                             <color key="backgroundColor" red="0.22601747088102242" green="0.49876427241395083" blue="1" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfW-qc-xhP">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="TOKEN" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfW-qc-xhP">
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="0.0" height="1"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="User" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rB-L8-tEu" userLabel="User">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="4Tu-km-4fC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,16 +130,20 @@
                                     <constraint firstAttribute="trailing" secondItem="ZfW-qc-xhP" secondAttribute="trailing" constant="10" type="user" id="1DZ-MD-uIV"/>
                                     <constraint firstItem="reH-SV-v7a" firstAttribute="leading" secondItem="4cJ-xB-1zv" secondAttribute="leading" constant="5" type="user" id="1Kc-12-Sla"/>
                                     <constraint firstItem="ZfW-qc-xhP" firstAttribute="top" secondItem="4cJ-xB-1zv" secondAttribute="top" constant="10" type="user" id="8yu-nG-FCv"/>
+                                    <constraint firstItem="ZfW-qc-xhP" firstAttribute="trailing" secondItem="4rB-L8-tEu" secondAttribute="trailing" type="default" id="QnL-hP-bTf"/>
+                                    <constraint firstAttribute="bottom" secondItem="4rB-L8-tEu" secondAttribute="bottom" constant="10" type="user" id="Rlf-KO-jDF"/>
                                     <constraint firstAttribute="bottom" secondItem="reH-SV-v7a" secondAttribute="bottom" constant="5" type="user" id="nmY-xB-CYe"/>
                                     <constraint firstItem="ZfW-qc-xhP" firstAttribute="leading" secondItem="4cJ-xB-1zv" secondAttribute="leading" constant="10" type="user" id="u4W-eo-0CR"/>
                                     <constraint firstAttribute="trailing" secondItem="reH-SV-v7a" secondAttribute="trailing" constant="5" type="user" id="uGb-zm-XMP"/>
                                     <constraint firstItem="reH-SV-v7a" firstAttribute="top" secondItem="4cJ-xB-1zv" secondAttribute="top" constant="5" type="user" id="vSd-22-KIv"/>
+                                    <constraint firstItem="4rB-L8-tEu" firstAttribute="leading" secondItem="ZfW-qc-xhP" secondAttribute="leading" type="default" id="vtS-Z3-rT1"/>
                                     <constraint firstAttribute="bottom" secondItem="ZfW-qc-xhP" secondAttribute="bottom" constant="10" type="user" id="xoo-UJ-lTO"/>
                                 </constraints>
                                 <size key="customSize" width="145" height="145"/>
                                 <connections>
                                     <outlet property="label" destination="ZfW-qc-xhP" id="eeP-AR-aID"/>
                                     <outlet property="selectionIndicator" destination="reH-SV-v7a" id="NZt-eF-zhg"/>
+                                    <outlet property="subtitleLabel" destination="4rB-L8-tEu" id="aVF-Fa-Fze"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
