@@ -20,3 +20,5 @@
 #define kAvailableTokensArray @"availableTokens"
 
 #define kDispensedTokensArray @"dispensedTokens"
+
+#define SCREENSHOT 0

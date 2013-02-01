@@ -72,6 +72,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="doneButton" destination="yc0-sb-RTL" id="uYH-wa-O1a"/>
                         <outlet property="textView" destination="yky-OC-98O" id="e5O-oZ-clm"/>
                     </connections>
                 </viewController>
@@ -155,7 +156,7 @@
                     <navigationItem key="navigationItem" title="Select Tokens" id="mvs-Uq-wMs">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="52f-aJ-gUW">
                             <connections>
-                                <segue destination="8Lh-nW-Jpx" kind="modal" id="JrG-mE-b5n"/>
+                                <segue destination="8Lh-nW-Jpx" kind="modal" identifier="addTokensSegue" id="JrG-mE-b5n"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="oGu-f6-ceM">
@@ -173,6 +174,57 @@
             <point key="canvasLocation" x="133" y="-424"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="AddTokensViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddTokensViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SelectableCollectionViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectableCollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="deselectionIndicator" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="highlightIndicator" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="selectionIndicator" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ShareTokensCollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShareTokensCollectionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="showSharingOptions:"/>
+                <relationship kind="outlet" name="actionButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="TokenCollectionViewCell" superclassName="SelectableCollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TokenCollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="subtitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

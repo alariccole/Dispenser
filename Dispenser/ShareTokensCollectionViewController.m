@@ -159,7 +159,18 @@
 
 	NSString * tokensString = sourceViewController.textView.text;
 
-	NSArray * tokensArray = [tokensString componentsSeparatedByString:@"\n"];//you may wish to choose a comma here, etc.
+	NSArray * tokensArray;
+	
+	//if (tokensString.length > 0)
+	{
+		tokensArray = [tokensString componentsSeparatedByString:@"\n"];//you may wish to choose a comma here, etc.
+	}
+//else
+	{
+		//clear all tokens
+
+		
+	}
 
 	self.availableTokensArray = tokensArray.mutableCopy;
 
@@ -171,8 +182,9 @@
 
 	[[NSUserDefaults standardUserDefaults] setObject:self.dispensedTokensArray forKey:kDispensedTokensArray];
 
-	
+
 	[[NSUserDefaults standardUserDefaults] synchronize];
+
 
 }
 
@@ -194,6 +206,29 @@
 
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+
+#if ! SCREENSHOT
+	
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		if (self.availableTokensArray.count == 0 && self.dispensedTokensArray.count == 0) {
+
+			//show the Add Tokens screen if we don't have any tokens yet
+
+			[self performSegueWithIdentifier:@"addTokensSegue" sender:self];
+		}
+
+	});
+
+#else
+
+	[UIApplication sharedApplication ].statusBarHidden = YES;
+
+#endif
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -207,6 +242,8 @@
 }
 
 #pragma mark Collection View
+
+
 
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {

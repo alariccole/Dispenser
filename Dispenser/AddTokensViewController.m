@@ -19,6 +19,13 @@
 	return YES;
 }
 
+#pragma mark Text Field Delegate
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+	
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AddTokensViewController : UIViewController <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 //Just paste your tokens into this text view, hit Done, and you're on your way
 @property (strong, nonatomic) IBOutlet UITextView *textView;
