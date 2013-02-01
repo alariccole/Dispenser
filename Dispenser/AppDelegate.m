@@ -12,8 +12,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+	
 	NSDictionary *userDefaultsDefaults  =	@{
+												@"primary_text": @"Here's your token(s).",
+												@"secondary_text": @"Enjoy!\n",
+	
 												kAvailableTokensArray: @[],
 												kDispensedTokensArray: @[],
 	//											kDispensedTokensArray: @[   @{  @"token":@"", @"user":@""  }   ]

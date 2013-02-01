@@ -33,9 +33,11 @@
 		}
 
 
-		NSString * initialPrompt = @"Here's your token(s) for Process."	;
 
-		NSString * finalPrompt = @"Be sure to also check out the next big thing: gistapp.com"	;
+		NSString * initialPrompt = [[NSUserDefaults standardUserDefaults] stringForKey:@"primary_text"];
+
+		NSString * finalPrompt = [[NSUserDefaults standardUserDefaults] stringForKey:@"secondary_text"];
+
 
 
 
@@ -49,24 +51,39 @@
 
 		UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:itemsForSharing applicationActivities: nil];
 
+		BOOL showFacebook = [[NSUserDefaults standardUserDefaults] boolForKey:@"show_facebook"];
 
-		activityController.excludedActivityTypes = @[
+		BOOL showTwitter = [[NSUserDefaults standardUserDefaults] boolForKey:@"show_twitter"];
+
+		BOOL showWeibo = [[NSUserDefaults standardUserDefaults] boolForKey:@"show_weibo"];
+
+
 		//UIActivityTypeCopyToPasteboard, //Note that copying will call the completion handler with completedSuccessfully=YES, and tokens will be removed
-		UIActivityTypeAssignToContact,
+
+		NSMutableArray * excludedActivityTypes = [NSMutableArray arrayWithObject:UIActivityTypeAssignToContact];
+
+		
 		//You probably don't want to post individual-specific codes to public places.
 		//Plus, these services won't work well with multiple URLs.
 		//Facebook is ok with 'http://' strings, but Twitter will ignore them unless in an NSURL
-		///*
-		 UIActivityTypePostToFacebook,
-		 UIActivityTypePostToTwitter,
-		 UIActivityTypePostToWeibo,
+		
+		if (!showFacebook) {
+			[excludedActivityTypes addObject:UIActivityTypePostToFacebook];
+		}
 
-		// */
+		if (!showTwitter) {
+			[excludedActivityTypes addObject:UIActivityTypePostToTwitter];
+		}
 
-		//UIActivityTypeSaveToCameraRoll, //not necessary to add these as we're dealing with text
-		//UIActivityTypePrint
-		];
+		if (!showWeibo) {
+			[excludedActivityTypes addObject:UIActivityTypePostToWeibo];
+		}
 
+
+		
+		activityController.excludedActivityTypes = excludedActivityTypes;
+		
+		
 		activityController.completionHandler = ^(NSString *activityType, BOOL completedSuccessfully)
 		{
 
