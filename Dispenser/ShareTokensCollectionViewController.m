@@ -176,15 +176,15 @@
 
 	NSString * tokensString = sourceViewController.textView.text;
 
-	NSArray * tokensArray;
+	NSArray * tokensArray = [NSArray array];
 	
-	//if (tokensString.length > 0)
+	if (tokensString.length > 0)
 	{
 		tokensArray = [tokensString componentsSeparatedByString:@"\n"];//you may wish to choose a comma here, etc.
 	}
-//else
+else
 	{
-		//clear all tokens
+		//clear all tokens?
 
 		
 	}
@@ -210,6 +210,8 @@
 {
     [super viewDidLoad];
 
+	[(TokensFlowLayout*)self.collectionView.collectionViewLayout setDelegate:self];
+	
 	self.collectionView.allowsMultipleSelection = YES;
 
 	//load previous tokens, if any
@@ -235,7 +237,7 @@
 
 			//show the Add Tokens screen if we don't have any tokens yet
 
-			[self performSegueWithIdentifier:@"addTokensSegue" sender:self];
+			[self performSegueWithIdentifier:@"addTokensSegue" sender:nil];
 		}
 
 	});
@@ -312,6 +314,14 @@
  }
  */
 
+-(CGSize)referenceSizeForDecorationView
+{
+	if ( self.availableTokensArray.count > 0) {
+		return CGSizeZero;
+	}
+	return CGSizeMake(300, 300);
+}
+	
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
 
@@ -378,5 +388,10 @@
 	
 }
 
+-(void)dealloc
+{
+	[(TokensFlowLayout*)self.collectionView.collectionViewLayout setDelegate:nil];
+
+}
 
 @end

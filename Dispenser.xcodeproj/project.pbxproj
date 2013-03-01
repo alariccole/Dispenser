@@ -25,6 +25,9 @@
 		6D81809216B97C430098D730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D81809116B97C430098D730 /* UIKit.framework */; };
 		6D81809416B97C430098D730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D81809316B97C430098D730 /* Foundation.framework */; };
 		6D81809616B97C440098D730 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D81809516B97C430098D730 /* CoreGraphics.framework */; };
+		6D8406FB16BB8D830066EDCA /* EmptyTokensDecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8406FA16BB8D830066EDCA /* EmptyTokensDecorationView.xib */; };
+		6D8406FF16BB8DAD0066EDCA /* EmptyTokensDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8406FE16BB8DAD0066EDCA /* EmptyTokensDecorationView.m */; };
+		6D84070216BB905A0066EDCA /* TokensFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D84070116BB905A0066EDCA /* TokensFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,11 @@
 		6D81809116B97C430098D730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6D81809316B97C430098D730 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6D81809516B97C430098D730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6D8406FA16BB8D830066EDCA /* EmptyTokensDecorationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTokensDecorationView.xib; sourceTree = SOURCE_ROOT; };
+		6D8406FD16BB8DAD0066EDCA /* EmptyTokensDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTokensDecorationView.h; sourceTree = SOURCE_ROOT; };
+		6D8406FE16BB8DAD0066EDCA /* EmptyTokensDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTokensDecorationView.m; sourceTree = SOURCE_ROOT; };
+		6D84070016BB905A0066EDCA /* TokensFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokensFlowLayout.h; sourceTree = SOURCE_ROOT; };
+		6D84070116BB905A0066EDCA /* TokensFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokensFlowLayout.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				6D150AE416BA75BC0063E4FF /* en.lproj */,
+				6D84070016BB905A0066EDCA /* TokensFlowLayout.h */,
+				6D84070116BB905A0066EDCA /* TokensFlowLayout.m */,
 				6D150ADA16BA75BC0063E4FF /* AddTokensViewController.h */,
+				6D8406FA16BB8D830066EDCA /* EmptyTokensDecorationView.xib */,
+				6D8406FD16BB8DAD0066EDCA /* EmptyTokensDecorationView.h */,
+				6D8406FE16BB8DAD0066EDCA /* EmptyTokensDecorationView.m */,
 				6D150ADB16BA75BC0063E4FF /* AddTokensViewController.m */,
 				6D150ADC16BA75BC0063E4FF /* AppDelegate.h */,
 				6D150ADD16BA75BC0063E4FF /* AppDelegate.m */,
@@ -204,6 +217,7 @@
 				6D20B2CC16BB39CF007A1346 /* Default@2x.png in Resources */,
 				6D20B2CE16BB39D2007A1346 /* Default.png in Resources */,
 				6D20B2D216BB4612007A1346 /* Settings.bundle in Resources */,
+				6D8406FB16BB8D830066EDCA /* EmptyTokensDecorationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +234,8 @@
 				6D150AF216BA75BC0063E4FF /* ShareTokensCollectionViewController.m in Sources */,
 				6D150AF316BA75BC0063E4FF /* TokenCollectionViewCell.m in Sources */,
 				6D150AF716BA75BC0063E4FF /* SelectableCollectionViewCell.m in Sources */,
+				6D8406FF16BB8DAD0066EDCA /* EmptyTokensDecorationView.m in Sources */,
+				6D84070216BB905A0066EDCA /* TokensFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

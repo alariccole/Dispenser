@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "TokenCollectionViewCell.h"
 #import "AddTokensViewController.h"
+#import "TokensFlowLayout.h"
 
-
-@interface ShareTokensCollectionViewController : UICollectionViewController
+@interface ShareTokensCollectionViewController : UICollectionViewController < CollectionViewDelegateTokensFlowLayout >
 
 @property (nonatomic, strong) NSMutableArray * availableTokensArray;
 
