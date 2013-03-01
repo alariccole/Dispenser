@@ -84,6 +84,7 @@
 			children = (
 				6D150AE516BA75BC0063E4FF /* InfoPlist.strings */,
 				6D150AE716BA75BC0063E4FF /* MainStoryboard.storyboard */,
+				6D8406FA16BB8D830066EDCA /* EmptyTokensDecorationView.xib */,
 			);
 			name = en.lproj;
 			path = Dispenser/en.lproj;
@@ -126,13 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				6D150AE416BA75BC0063E4FF /* en.lproj */,
-				6D84070016BB905A0066EDCA /* TokensFlowLayout.h */,
-				6D84070116BB905A0066EDCA /* TokensFlowLayout.m */,
-				6D150ADA16BA75BC0063E4FF /* AddTokensViewController.h */,
-				6D8406FA16BB8D830066EDCA /* EmptyTokensDecorationView.xib */,
-				6D8406FD16BB8DAD0066EDCA /* EmptyTokensDecorationView.h */,
-				6D8406FE16BB8DAD0066EDCA /* EmptyTokensDecorationView.m */,
-				6D150ADB16BA75BC0063E4FF /* AddTokensViewController.m */,
 				6D150ADC16BA75BC0063E4FF /* AppDelegate.h */,
 				6D150ADD16BA75BC0063E4FF /* AppDelegate.m */,
 				6D150ADF16BA75BC0063E4FF /* ShareTokensCollectionViewController.h */,
@@ -141,6 +135,12 @@
 				6D150AE216BA75BC0063E4FF /* TokenCollectionViewCell.m */,
 				6D150AE916BA75BC0063E4FF /* SelectableCollectionViewCell.h */,
 				6D150AEA16BA75BC0063E4FF /* SelectableCollectionViewCell.m */,
+				6D84070016BB905A0066EDCA /* TokensFlowLayout.h */,
+				6D84070116BB905A0066EDCA /* TokensFlowLayout.m */,
+				6D8406FD16BB8DAD0066EDCA /* EmptyTokensDecorationView.h */,
+				6D8406FE16BB8DAD0066EDCA /* EmptyTokensDecorationView.m */,
+				6D150ADA16BA75BC0063E4FF /* AddTokensViewController.h */,
+				6D150ADB16BA75BC0063E4FF /* AddTokensViewController.m */,
 				6D81809816B97C440098D730 /* Supporting Files */,
 			);
 			name = Dispenser;
