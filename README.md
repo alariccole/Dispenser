@@ -9,6 +9,8 @@ This was built to use codes from http://usetokens.com (no affiliation, I just li
 
 I found that I was often handing out codes for my apps in person. Using a text file was getting tedious, so I built this in between sessions at Macworld.
 
+![ScreenShot](https://raw.github.com/alariccole/Dispenser/master/screenshots/1.png)
+
 Dispenser lets you share one or more codes via email, iMessage, etc. You can set your own sharing text via Settings.
 
 
