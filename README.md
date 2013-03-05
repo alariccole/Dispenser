@@ -7,7 +7,7 @@ An easier way to give out promo codes directly from your iPhone.
 
 This was built to use either raw promo codes, or redeem links such as from the Tokens Mac App http://usetokens.com (no affiliation, I just like the product). Just paste line-delimited text into this app to easily share. This app does not fetch codes from ITC etc. It is only meant as a UI for sharing.
 
-I found that I was often handing out codes for my apps in person. Using a text file was getting tedious, so I built this in between sessions at Macworld.
+I found that I was often handing out codes for [my apps](https://itunes.apple.com/us/artist/alaric-cole/id286391075 "App Store Link") in person. Using a text file was getting tedious, so I built this in between sessions at Macworld.
 
 ![ScreenShot](https://raw.github.com/alariccole/Dispenser/master/screenshots/1.png)
 
