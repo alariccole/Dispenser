@@ -169,6 +169,24 @@
 {
 	//just unwind
 }
+-(NSArray * )parseTokens:(NSString*)tokens
+{
+	NSError *error = nil;
+
+	NSMutableArray * tokensArray = [NSMutableArray array];
+	
+	NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:(NSTextCheckingTypes)NSTextCheckingTypeLink error:&error];
+	NSArray *matches = [detector matchesInString:tokens options:0 range:NSMakeRange(0, [tokens length])];
+
+	[matches enumerateObjectsUsingBlock:^(NSTextCheckingResult *match, NSUInteger idx, BOOL *stop) {
+		NSURL* url = match.URL;
+		[tokensArray addObject:url.absoluteString];
+		
+	}];
+
+	return tokensArray;
+}
+
 
 - (IBAction)done:(UIStoryboardSegue *)segue
 {
@@ -176,16 +194,15 @@
 
 	NSString * tokensString = sourceViewController.textView.text;
 
-	NSArray * tokensArray = [NSArray array];
+	NSArray * tokensArray = @[];
 	
 	if (tokensString.length > 0)
 	{
-		tokensArray = [tokensString componentsSeparatedByString:@"\n"];//you may wish to choose a comma here, etc.
+		tokensArray = [self parseTokens:tokensString];
 	}
-else
+	else
 	{
 		//clear all tokens?
-
 		
 	}
 
