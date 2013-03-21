@@ -5,7 +5,7 @@ An easier way to give out promo codes directly from your iPhone.
 
 ![ScreenShot](https://raw.github.com/alariccole/Dispenser/master/Icon-72@2x.png)
 
-This was built to use either raw promo codes, or redeem links such as from the Tokens Mac App http://usetokens.com (no affiliation, I just like the product). Just paste line-delimited text into this app to easily share. This app does not fetch codes from ITC etc. It is only meant as a UI for sharing.
+This was built primarily to use redeem links such as those from the Tokens Mac App http://usetokens.com (no affiliation, I just like the product). Just paste a set of links into this app to easily share them piecemeal. This app does not fetch codes from ITC etc. It is only meant as a UI for sharing.
 
 I found that I was often handing out codes for [my apps](https://itunes.apple.com/us/artist/alaric-cole/id286391075 "App Store Link") in person. Using a text file was getting tedious, so I built this in between sessions at Macworld.
 
@@ -21,6 +21,8 @@ Useful for devs, but also a simple app to showcase modern iOS design (using iOS 
 • Storyboards and segues (including unwind segues)
 
 • UIActivityViewController (sharing) APIs
+
+• NSDataDetectors for parsing text for links
 
 
 ![ScreenShot](https://raw.github.com/alariccole/Dispenser/master/screenshots/2.png)     ![ScreenShot](https://raw.github.com/alariccole/Dispenser/master/screenshots/3.png)
@@ -38,6 +40,8 @@ http://tokn.co/5ujxae3c
 http://tokn.co/uv34sr9x
 http://tokn.co/6enscstw
 http://tokn.co/4caj3d72
+http://tokn.co/cuyb775r
+http://tokn.co/pvg74eaq
 http://tokn.co/3qhn9749
 http://tokn.co/cn6hme6v
 http://tokn.co/pjtdjrjp
